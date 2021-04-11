@@ -1,0 +1,9 @@
+<div class=form>
+<h1>CONTACT</h1>
+<%= form_for :email, url: create_email_path do |f| %>
+<p><%= f.text_field :email, :size=>"60", placeholder: 'enter your emailadress' %></p>
+<p><%= f.text_field :title, :size=>"60", placeholder: 'enter title' %></p>
+<p><%= f.text_area :content, :size=>"60x10", placeholder: 'enter content' %></p>
+<p><%= f.submit %></p>
+<% end %>
+</div>
