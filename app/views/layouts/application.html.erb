@@ -15,53 +15,36 @@
   </head>
 
   <body>
-    <div class="container">
-      <div class="nav-header">
-        <div class="text">
-          PORTFOLIO
-        </div>
-      </div>  
-      
-      <div class="item">
-        <a href="studyrecord.html">
-        <%= link_to studyrecord_path do %>
-          <div class="text"><i class="fas fa-book"></i>STUDY RECORD</div>
-        <% end %>
-        </a>
-      </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <%= link_to "Home", root_path, class: "nav-link active" %>
+        </li>
+        
+        <li class="nav-item">
+          <%= link_to "Japanese", japanese_path, class: "nav-link" %>
+        </li>
 
-      <div class="item">
-        <%= link_to new_email_path do %>
-          <div class="text"><i class="fas fa-envelope-square"></i>CONTACT</div>
-        <% end %>
-      </div>
+        <li class="nav-item">
+          <%= link_to "Study Record", studyrecord_path, class: "nav-link" %>
+        </li>
 
-      <div class="item">
-        <%= link_to japanese_path do %>
-          <div class="text"><i class="fas fa-home"></i>JAPANESE</div>
-        <% end %>
-      </div>      
-
-      <div class="item">
-        <%= link_to root_path do %>
-          <div class="text"><i class="fas fa-home"></i>ENGLISH</div>
-        <% end %>
-      </div>      
-    </div>  
-               
-    <div class="header-phone">
-      <input type="checkbox" id="input">
-      <label for="input"><div class="line"></div><div class="line"></div><div class="line"></div></label>
-      <div class="content">
-        <ul>
-          <li><%= link_to studyrecord_path do %>STUDY RECORD<% end %></li>
-          <li><%= link_to new_email_path do %>CONTACT<% end %></li>
-          <li><%= link_to japanese_path do %>JAPANESE<% end %></li>      
-          <li><%= link_to root_path do %>ENGLISH<% end %></li>    
-        </ul>
-      </div>
+        <li class="nav-item">
+          <%= link_to "Contact", new_email_path, class: "nav-link" %>
+        </li>
+        
+      </ul>
     </div>
-
+  </div>
+</nav>
+ 
+                 
   <div class="popup">
   <%= flash[:notice] %></div>
 

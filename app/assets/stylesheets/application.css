@@ -54,9 +54,7 @@ a {
   text-decoration: none;
 }
 
-.header-phone {
-  visibility: hidden;
-}
+
 
 .header {
   background-color: #F9C3DB;
@@ -180,61 +178,7 @@ ul {
   list-style-position: inside;
 }
 
-@media (max-width:700px) {
-  body {
-    margin-left: 0;
-    margin-right: 0;
 
-  }
-  .biography p {
-    margin: 0;
-  }
-
-  .education {
-    margin: 0;
-  }
-
-  .experience {
-    margin: 0;
-  }
-
-  .header-phone {
-    visibility: visible;
-    position: fixed;
-
-  }
-
-  #input {
-    display: none;
-  }
-
-  .line {
-    width: 30px;
-    height: 3px;
-    background-color: black;
-    margin: 5px;
-  }
-
-  .content {
-    background-color: pink;
-    width: 200px;
-    height: 100%;
-    transform: translateX(-200px);
-  }
-
-  #input:checked ~ .content {
-    transform:translateX(0px);
-  }
-
-  .container {
-    visibility: hidden;
-  }
-}
-
-.studyrecord {
-  text-align: center;
-  margin: 20px auto;
-}
 
 .form {
   text-align: center;
