@@ -1,30 +1,26 @@
-    <h1>BIOGRAPHY</h1>
+    <h1 class="my-5">BIOGRAPHY</h1>
       <div class="biography">      
         <%= image_tag 'yukiko.jpg', width: 120, height: 120, class: 'icon' %>
         <h2>Yukiko.K</h2>
-        <p>現在カナダのモントリオール在住です。2020年11月から独学でHTML、CSS、JavaScriptを勉強し始めました。友人がプログラミングの学習サイトを使って学んでいるのを見て楽しそうだと思い、始めたのがきっかけです。現在もドットインストールの学習サイトでJavaScriptを学んでいます。プログラミングを始める前は三年間日本語を教える仕事をしていました。日本語の文法や教え方を自力で勉強し、2021年2月時点で3200回以上のレッスン経験があります。新しいことを習うのが好きです。英語（中級）・フランス語（初級）・韓国語（初級）が話せます。</p>   
+        <p>現在カナダのモントリオール在住です。2020年11月から独学でHTML、CSS、JavaScript、Ruby、Ruby on railsを勉強し始めました。友人がプログラミングの学習サイトを使って学んでいるのを見て楽しそうだと思い、始めたのがきっかけです。現在もドットインストールの学習サイトでJavaScriptを学んでいます。プログラミングを始める前は三年間日本語を教える仕事をしていました。日本語の文法や教え方を自力で勉強し、2021年2月時点で3200回以上のレッスン経験があります。新しいことを習うのが好きです。英語（中級）・フランス語（初級）・韓国語（初級）が話せます。</p>   
       </div>
 
-    <h1>EDUCATION</h1>
-    <div class="education">
-      <ul>
-        <li>熊本大学工学部物質生命科学科  2014年卒業</li>
-        <li>都城工業高等専門学校物質工学科  2012年卒業</li>
-      </ul>
+    <h1 class="my-5">EDUCATION</h1>
+    <div class="education my-5 text-center">
+        <p>熊本大学工学部物質生命科学科  2014年卒業</p>
+        <p>都城工業高等専門学校物質工学科  2012年卒業</p>
     </div>
       
-    <h1>EXPERIENCE</h1>
-    <div class="experience">
-      <ul>
-        <li>Preply Inc (日本語教師) 2018年4月から現在</li>
-        <li>Kashima restaurant (キッチンスタッフ) 2017年5月から2018年3月</li>
-        <li>公益財団法人都道府県会館（一般事務）2016年3月から2017年3月</li>
-        <li>株式会社えがお（システム部/お客様サポート）2014年4月から2015年9月</li>
-      </ul>
+    <h1 class="my-5">EXPERIENCE</h1>
+    <div class="experience my-5 text-center">
+        <p>Preply Inc (日本語教師) 2018年4月から現在</p>
+        <p>Kashima restaurant (キッチンスタッフ) 2017年5月から2018年3月</p>
+        <p>公益財団法人都道府県会館（一般事務）2016年3月から2017年3月</p>
+        <p>株式会社えがお（システム部/お客様サポート）2014年4月から2015年9月</p>
     </div>
       
-<h1>SKILLS</h1>
-    <div class="skills">
+<h1 class="my-5">SKILLS</h1>
+    <div class="skills my-5">
       <div class="skills-item">
         <%= image_tag 'html.png', width: 100, height: 100 %>
       </div>
@@ -41,26 +37,28 @@
         <%= image_tag 'rubyonrails.png', width: 100, height: 100 %>
       </div>
     </div>
+
+  <h1 class="my-5">PROJECTS</h1>      
+  <div class="my-5 d-flex justify-content-center">    
+    <div class="card mx-5" style="width: 18rem;">
+      <%= image_tag 'lifeinmontreal', class: "card-img-top" %>
+      <div class="card-body">
+        <h5 class="card-title text-center">Blog</h5>      
+        <a href="https://yukimontrealblog.herokuapp.com/" class="btn btn-primary ">Go to this website!</a>
+      </div>
+    </div>
+
+    <div class="card mx-5" style="width: 18rem;">
+      <%= image_tag 'project_homepage', class: "card-img-top" %>
+      <div class="card-body">
+        <h5 class="card-title">App website</h5>
+        <a href="https://yukikosensei.github.io/awesomeapp.github.io/" class="btn btn-primary">Go to this website!</a>
+      </div>
+    </div>
+  </div>
  
 
-    <h1>PROJECTS</h1>      
-        <div class="pic">
-          <a href="https://yukikosensei.github.io/awesomeapp.github.io/">
-            <%= image_tag 'homepage.png', width: 350, height: 200 %>
-          </a>
-
-          <a href="https://yukikosensei.github.io/myomikuji/">
-            <%= image_tag 'omikuji.png', width: 350, height: 200 %>
-          </a>
-
-          <a href="https://yukikosensei.github.io/calendar/">
-            <%= image_tag 'calendar.png', width: 350, height: 200 %>
-          </a>
-
-          <a href="https://yukikosensei.github.io/stopwatch/">
-            <%= image_tag 'stopwatch.png', width: 350, height: 200 %>
-          </a>
-        </div>
+  
 
 
     

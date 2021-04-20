@@ -1,31 +1,27 @@
-<h1>BIOGRAPHY</h1>
+<h1 class="my-5">BIOGRAPHY</h1>
 <div class="biography">      
   <%= image_tag 'yukiko.jpg', width: 120, height: 120, class: 'icon' %>
   <h2>Yukiko.K</h2>
   <p>I currently live in Montreal, Canada and I started learning programming since November 2020 using self-learning websites. My friend has learned to program and it made me interested, and this is when I started.So far, I've been enjoying making products from start to finish. Before learning how to program, I have been teaching Japanese for 3 years. I learned Japanese grammar and how to teach by myself and have done more than 3200 lessons. I like learning new things. I speak Japanese, English and a bit of French and Korean.</p>   
 </div>
 
-<h1>EDUCATION</h1>
-<div class="education">
-<ul>
-  <li>Chemistry Major, Kumamoto University, Japan APR 2012 - MAR 2014</li>
-  <li>Chemistry Major, National Institute of Technology, Miyakonojo College, Japan APR 2007 - MAR 2012</li>
-</ul>
+<h1 class="my-5">EDUCATION</h1>
+<div class="my-5 text-center">
+  <p>Chemistry Major, Kumamoto University, Japan APR 2012 - MAR 2014</p>
+  <p>Chemistry Major, National Institute of Technology, Miyakonojo College, Japan APR 2007 - MAR 2012</p>
 </div>
 
-<h1>EXPERIENCE</h1>
-<div class="experience">
-<ul>
-  <li>Preply Inc, Canada (Japanese teacher) APR 2018 - NOW</li>
-  <li>Kashima restaurant, Canada (Chef) MAY 2017 - MAR 2018</li>
-  <li>Public Interest Incorporated Foundation, Japan (General Clerk) MAR 2016-MAR 2017</li>
-  <li>Egao Inc., Japan (Customer Service Representative, IT Department Assistant) APR 2014-SEP 2015</li>
-</ul>
+<h1 class="my-5">EXPERIENCE</h1>
+<div class="my-5 text-center">
+  <p>Preply Inc, Canada (Japanese teacher) APR 2018 - NOW</p>
+  <p>Kashima restaurant, Canada (Chef) MAY 2017 - MAR 2018</p>
+  <p>Public Interest Incorporated Foundation, Japan (General Clerk) MAR 2016-MAR 2017</p>
+  <p>Egao Inc., Japan (Customer Service Representative, IT Department Assistant) APR 2014-SEP 2015</p>
 </div>
 
 
-<h1>SKILLS</h1>
-<div class="skills">
+<h1 class="my-5">SKILLS</h1>
+<div class="skills my-5">
   <div class="skills-item">
     <%= image_tag 'html.png', width: 100, height: 100 %>
   </div>
@@ -43,23 +39,23 @@
   </div>
 </div>
 
-<h1>PROJECTS</h1>      
-  <div class="pic">
-    <a href="https://yukikosensei.github.io/awesomeapp.github.io/">
-      <%= image_tag 'homepage.png', width: 350, height: 200 %>
-    </a>
+<h1 class="my-5">PROJECTS</h1>      
+  <div class="my-5 d-flex justify-content-center">    
+    <div class="card mx-5" style="width: 18rem;">
+      <%= image_tag 'lifeinmontreal', class: "card-img-top" %>
+      <div class="card-body">
+        <h5 class="card-title text-center">Blog</h5>      
+        <a href="https://yukimontrealblog.herokuapp.com/" class="btn btn-primary ">Go to this website!</a>
+      </div>
+    </div>
 
-    <a href="https://yukikosensei.github.io/myomikuji/">
-      <%= image_tag 'omikuji.png', width: 350, height: 200 %>
-    </a>
-
-    <a href="https://yukikosensei.github.io/calendar/">
-      <%= image_tag 'calendar.png', width: 350, height: 200 %>
-    </a>
-
-    <a href="https://yukikosensei.github.io/stopwatch/">
-      <%= image_tag 'stopwatch.png', width: 350, height: 200 %>
-    </a>
+    <div class="card mx-5" style="width: 18rem;">
+      <%= image_tag 'project_homepage', class: "card-img-top" %>
+      <div class="card-body">
+        <h5 class="card-title">App website</h5>
+        <a href="https://yukikosensei.github.io/awesomeapp.github.io/" class="btn btn-primary">Go to this website!</a>
+      </div>
+    </div>
   </div>
 
 
