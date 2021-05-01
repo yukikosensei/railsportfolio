@@ -7,7 +7,8 @@ class EmailsController < ApplicationController
     title = params[:email][:title]
     content = params[:email][:content]
     UserNotifierMailer.send_contact_email(email, title, content).deliver_now
-   
-    redirect_to new_email_path, notice: "Message sent!"
+    flash[:success] = "Message sent!"
+    redirect_to new_email_path
+    #redirect_to new_email_path, notice: "Message sent!"
   end
 end
