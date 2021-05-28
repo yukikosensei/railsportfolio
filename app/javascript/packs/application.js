@@ -3,11 +3,15 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 
+//= require Chart.min 
+//= require rails-ujs
+//= require turbolinks
+//= require_tree .
+
 require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
-
 
 import "stylesheets/application"
 
@@ -18,3 +22,4 @@ import "stylesheets/application"
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 import '../js/bootstrap_js_files.js'
+
