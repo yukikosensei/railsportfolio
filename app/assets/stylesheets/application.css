@@ -155,3 +155,9 @@ footer {
   flex-wrap:wrap;
   justify-content: center;
 }
+
+.field {
+  border-radius:5px;
+  margin-bottom: 10px;
+  border: solid;
+}
