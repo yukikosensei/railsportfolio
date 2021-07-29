@@ -1,6 +1,50 @@
-    <h1 class="my-5">STUDY RECORD</h1>
-    <div class="studyrecord">
-      <p class="text-center"><a href="https://prog-8.com/">Progate（HTML/CSS/JavaScript）</a></p>
-      <p class="text-center"><a href="https://dotinstall.com/">ドットインストール（HTML/CSS/JavaScript/Ruby/Ruby on rails）</a></p>
-      <p class="text-center"><a href="https://railstutorial.jp/">Ruby on Railsチュートリアル</a></p>
-    </div>  
+<h1 class="mt-5">STUDY RECORD</h1>
+<div class="container d-flex flex-wrap ">
+  <div class="card m-3" style="width: 18rem;">
+    <%= image_tag 'progate.png', class: "card-img-top" %>
+    <div class="card-body">
+      <h5 class="card-title text-center">Progate</h5>      
+      <a href="https://prog-8.com/" class="btn btn-primary ">Go to this website!</a>
+    </div>
+  </div>
+
+  <div class="card m-3" style="width: 18rem;">
+    <%= image_tag 'dotinstall.png', class: "card-img-top" %>
+    <div class="card-body">
+      <h5 class="card-title text-center">ドットインストール</h5>      
+      <a href="https://dotinstall.com/" class="btn btn-primary ">Go to this website!</a>
+    </div>
+  </div>
+
+  <div class="card m-3" style="width: 18rem;">
+    <%= image_tag 'railstutorial.png', class: "card-img-top" %>
+    <div class="card-body">
+      <h5 class="card-title text-center">Railsチュートリアル</h5>      
+      <a href="https://railstutorial.jp/" class="btn btn-primary ">Go to this website!</a>
+    </div>
+  </div>
+
+  <div class="card m-3" style="width: 18rem;">
+    <%= image_tag 'udemysql.png', class: "card-img-top" %>
+    <div class="card-body">
+      <h5 class="card-title text-center">Udemy SQL course</h5>      
+      <a href="https://www.udemy.com/course/standard-sql-for-beginners/" class="btn btn-primary ">Go to this website!</a>
+    </div>
+  </div>
+
+  <div class="card m-3" style="width: 18rem;">
+    <%= image_tag 'docker.png', class: "card-img-top" %>
+    <div class="card-body">
+      <h5 class="card-title text-center">Udemy docker course</h5>      
+      <a href="https://www.udemy.com/course/docker-k/" class="btn btn-primary ">Go to this website!</a>
+    </div>
+  </div>
+
+  <div class="card m-3" style="width: 18rem;">
+    <%= image_tag 'everydayrailsrspec.png', class: "card-img-top" %>
+    <div class="card-body">
+      <h5 class="card-title text-center">Rspec</h5>      
+      <a href="https://leanpub.com/everydayrailsrspec-jp" class="btn btn-primary ">Go to this website!</a>
+    </div>
+  </div> 
+</div>

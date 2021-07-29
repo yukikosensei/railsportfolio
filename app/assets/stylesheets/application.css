@@ -24,13 +24,6 @@
   src: url('GothamBold.ttf');
 }
 
-.container {
-  display: flex;
-  justify-content: flex-end;
-  background-color: #F9C3DB;
-  padding: 5px;
-  font-family: Georgia, serif;
-}
 
 .item {
   width: 200px;
