@@ -1,39 +1,28 @@
 <h1 class="my-5">BIOGRAPHY</h1>
-<div class="biography">      
+<div class="text-center">      
   <%= image_tag 'yukiko.jpg', width: 120, height: 120, class: 'icon' %>
   <h2>Yukiko</h2>
-  <p><%= t(".introduction.1") %></p>
-  <p><%= t(".introduction.2") %></p>
-  <p><%= t(".introduction.3") %></p>  
+  <p class="mx-4"><%= t(".introduction.1") %><br><%= t(".introduction.2") %><br><%= t(".introduction.3") %></p>  
 </div>
 
 <h1 class="mt-5">EDUCATION</h1>
-<div class="text-center mb-5">
-  <p><%= t(".education") %></p>
-</div>
+<p class="text-center mb-5"><%= t(".education") %></p>
 
 <h1 class="mt-5">EXPERIENCE</h1>
-<div class="text-center mb-5">
-  <p><%= t(".experience.sixth") %></p>
-  <p><%= t(".experience.fifth") %></p>
-  <p><%= t(".experience.forth") %></p>
-  <p><%= t(".experience.third") %></p>
-  <p><%= t(".experience.second") %></p>
-  <p><%= t(".experience.first") %></p>
-</div>
+<p class="text-center mb-5"><%= t(".experience") %></p>
 
 <h1 class="mt-5">SKILLS</h1>
 <div class="skills mb-5">
   <p class="skill">
-    <span class="star5_rating" data-rate="3.5"></span>
+    <span class="star5_rating" data-rate="3"></span>
     HTML
   </p>
   <p class="skill">
-    <span class="star5_rating" data-rate="3.5"></span>
+    <span class="star5_rating" data-rate="3"></span>
     CSS
   </p>
   <p class="skill">
-    <span class="star5_rating" data-rate="2"></span>
+    <span class="star5_rating" data-rate="3"></span>
     JavaScript
   </p>
   <p class="skill">
@@ -51,8 +40,8 @@
 </div>
 
 <h1 class="mt-5">PROJECTS</h1>      
-  <div class="mb-5 d-flex justify-content-center">    
-    <div class="card mx-5" style="width: 18rem;">
+  <div class="mb-5 d-flex justify-content-center" id="projects">    
+    <div class="card mx-5 project" style="width: 18rem;">
       <%= image_tag 'lifeinmontreal.png', class: "card-img-top" %>
       <div class="card-body">
         <h5 class="card-title text-center">Blog</h5>      
@@ -60,7 +49,7 @@
       </div>
     </div>
 
-    <div class="card mx-5" style="width: 18rem;">
+    <div class="card mx-5 project" style="width: 18rem;">
       <%= image_tag 'project_homepage.png', class: "card-img-top" %>
       <div class="card-body">
         <h5 class="card-title text-center">App website</h5>
@@ -76,6 +65,3 @@
       </div>
     </div>
   </div>
-
-
-
